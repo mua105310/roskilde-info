@@ -1,4 +1,30 @@
 import Image from "next/image";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Roskilde – en levende kulturby året rundt | Roskilde Info',
+  description: 'Oplev Roskilde som en levende kulturby med historiske seværdigheder, Roskilde Festival, Musicon og mange andre attraktioner. Læs om byens rige kulturarv og moderne kulturliv.',
+  keywords: 'Roskilde, kulturby, Roskilde Festival, Roskilde Domkirke, Vikingeskibsmuseet, Musicon, RAGNAROCK, begivenheder, festival, historie, kultur',
+  openGraph: {
+    title: 'Roskilde – en levende kulturby året rundt | Roskilde Info',
+    description: 'Oplev Roskilde som en levende kulturby med historiske seværdigheder, Roskilde Festival, Musicon og mange andre attraktioner.',
+    type: 'article',
+    locale: 'da_DK',
+    siteName: 'Roskilde Info',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Roskilde – en levende kulturby året rundt | Roskilde Info',
+    description: 'Oplev Roskilde som en levende kulturby med historiske seværdigheder, Roskilde Festival, Musicon og mange andre attraktioner.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://roskilde-info.dk',
+  },
+};
 
 export default function Home() {
   return (
